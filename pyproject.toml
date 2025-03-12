@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "wh40k-tts-editor"
+version = "1.0.0"
+description = "A GUI editor for Warhammer 40k Tabletop Simulator unit descriptions"
+readme = "README.md"
+authors = [
+    {name = "TTS Editor Developer"}
+]
+license = {text = "MIT"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Games/Entertainment :: Board Games",
+    "Topic :: Utilities",
+]
+requires-python = ">=3.6"
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=6.0",
+    "black>=21.5b2",
+    "flake8>=3.9.2",
+]
+
+[project.scripts]
+tts-editor = "tts_editor.main:main"
+
+[tool.setuptools]
+packages = ["tts_editor"]
+package-dir = {"tts_editor" = "src/tts_editor"}
+
+[tool.black]
+line-length = 88
+target-version = ["py36", "py37", "py38", "py39"]
+include = '\.pyi?$'
+
+[tool.isort]
+profile = "black"
+line_length = 88
