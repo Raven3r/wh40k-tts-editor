@@ -50,8 +50,8 @@ python -m run_editor.py
    - Use the Structured Editor tab for a more user-friendly interface.
 
 4. **Saving Changes**:
-   - Click "Save Changes" to update the unit in memory.
-   - Use File > Save to save changes to the JSON file.
+   - Click "Save Changes" to save to the current file.
+   - Use File > Save as... to save to a specified/new JSON file.
 
 ## Project Structure
 
