@@ -29,25 +29,10 @@ pip install -e .
 
 ### Running the Application
 
-You can run the application in several ways:
-
-1. Using the installed script:
-
 ```bash
-tts-editor
+python -m run_editor.py
 ```
 
-2. Directly from the source:
-
-```bash
-python -m tts_editor.main
-```
-
-3. With a file to open:
-
-```bash
-tts-editor "path/to/your/tts_file.json"
-```
 
 ### Using the Editor
 
